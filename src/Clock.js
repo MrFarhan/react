@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Digitalclock from './Digitalclock.js'
-import Analogclock from './Analogclock.js'
-import Logger from './Logger.js'
+// import Digitalclock from './Digitalclock.js'
+// import Analogclock from './Analogclock.js'
+// import Logger from './Logger.js'
+import Events from './Events.js'
 
 class Clock extends Component {
 
@@ -31,12 +32,16 @@ class Clock extends Component {
             <div>
                 {/* <Digitalclock time={this.state.currentTime} />
                 <Analogclock time={this.state.currentTime} /> */}
-                {
+                {/* {
                     (this.state.counter < 3) ?
                         (<Logger time={this.state.currentTime} />) :
                         (null)
-                }
+                } */}
                 {/* <Logger time={this.state.currentTime} /> */}
+
+
+                <Events />
+
             </div>
         )
     }
